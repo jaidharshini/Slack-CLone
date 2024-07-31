@@ -21,13 +21,34 @@ A simple Slack clone built with the MERN stack (MongoDB, Express, React, Node.js
 ## **Technologies Used:**
 - **MongoDB**
 - **Express.js**
-- **React**
-- **Node.js**
 
-## **Setup and Installation:**
+## **Install server dependencies:**
+cd server
+npm install
 
-**Clone the repository:**
-```bash
-git clone https://github.com/your-username/slack-clone.git
-cd slack-clone
+##**Install client dependencies:**
+cd ../client
+npm install
+
+##**Configure environment variables:**
+
+Create a .env file in the server directory with the following content:
+
+MONGODB_URI=mongodb://localhost:27017/slack-clone
+JWT_SECRET=your_jwt_secret
+
+**Replace your_jwt_secret with a secret key of your choice.**
+
+**Start the MongoDB server:**
+
+mongod
+
+**Run the server:**
+cd srver
+npm start
+
+**Run the client:**
+cd client
+npm start
+
 
